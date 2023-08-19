@@ -1,0 +1,19 @@
+{
+  "tasks": {
+    "dev": "deno run --allow-net=0.0.0.0:8000 --watch main.tsx"
+  },
+  "lock": false,
+  "imports": {
+    "std/": "https://deno.land/std@0.175.0/",
+    "preact": "https://esm.sh/preact@10.11.0",
+    "preact/": "https://esm.sh/preact@10.11.0/",
+    "preact-render-to-string": "https://esm.sh/*preact-render-to-string@5.2.4"
+  },
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact"
+  },
+  "fmt": {
+    "exclude": ["README.md"]
+  }
+}
